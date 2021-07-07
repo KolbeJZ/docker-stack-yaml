@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  firstservice:
+    image: simpleapp:1.0
+    ports:
+      - 3000:4000
+    deploy:
+      replicas: 3
+  secondservice:
+    image: simpleapp:1.0
+    ports:
+      - 3001:4000
+    deploy:
+      replicas: 2

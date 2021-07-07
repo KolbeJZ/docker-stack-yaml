@@ -1,0 +1,11 @@
+html 
+    head 
+        title= title
+    body 
+        h1(id='myId')= headerMessage
+        p Soccer #{partialText}
+        ul
+            each val in users
+                li= val.username + ': ' + val.email
+
+    include date.pug
